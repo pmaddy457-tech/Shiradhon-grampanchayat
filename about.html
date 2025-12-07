@@ -1,88 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Shiradhon Gram Panchayat</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आमच्याबद्दल - शिराढोण ग्रामपंचायत</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
-<header>
-  <div class="container">
-    <h1>🏛️ Shiradhon Gram Panchayat</h1>
-    <nav>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#gallery">Gallery</a></li>
-        <li><a href="index.html#social-feeds">Social Feeds</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo" onerror="this.style.display='none'">
+                <span>शिराढोण ग्रामपंचायत</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">मुख्यपृष्ठ</a></li>
+                <li><a href="about.html" class="active">आमच्याबद्दल</a></li>
+                <li><a href="gallery.html">गॅलरी</a></li>
+                <li><a href="index.html#services">सेवा</a></li>
+                <li><a href="index.html#contact">संपर्क</a></li>
+            </ul>
+        </div>
     </nav>
-  </div>
-</header>
 
-<main>
-  <section class="about-intro">
-    <div class="container">
-      <h2>Our Vision and Mission</h2>
-      <p>The Shiradhon Gram Panchayat is dedicated to the holistic development of our village. Our mission is to ensure transparent, accountable, and citizen-centric governance, focusing on education, sanitation, health, and infrastructure.</p>
-      <p>We strive to be a model village that balances modern progress with our rich cultural and environmental heritage.</p>
-    </div>
-  </section>
+    <section class="section" style="margin-top: 100px;">
+        <h1 class="section-title">आमच्याबद्दल</h1>
+        <p class="section-subtitle">शिराढोण ग्रामपंचायतीचा परिचय</p>
 
-  <hr>
-
-  <section class="leadership">
-    <div class="container">
-      <h2>🤝 Our Leadership</h2>
-      <div class="personnel-grid">
-        <div class="personnel-card">
-          <div class="photo-area">
-            <img src="images/khushal.jpeg" alt="Sarpanch's Photo">
-          </div>
-          <h3>SHRI. KHUSHALRAO MADHAVRAO PANDAGALE</h3>
-          <h4>Sarpanch (Village Head)</h4>
-          <p>Elected representative of the community, responsible for implementing village development schemes and chairing the Gram Sabha.</p>
-          <p class="quote">"Together, we will build a stronger, brighter future for Shiradhon."</p>
+        <div class="contact-card">
+            <h2 style="color: var(--primary-green); margin-bottom: 1rem;">आमचे ध्येय</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                शिराढोण ग्रामपंचायत हा महाराष्ट्रातील एक अग्रगण्य ग्रामीण स्थानिक स्वराज्य संस्था आहे. 
+                आमचे उद्दिष्ट गावाचा सर्वांगीण विकास करणे, नागरिकांना उत्तम सेवा पुरविणे आणि 
+                गावाला आधुनिक सुविधांनी सुसज्ज करणे हे आहे. आम्ही पारदर्शक प्रशासन, 
+                जनसहभाग आणि शाश्वत विकासावर विश्वास ठेवतो.
+            </p>
         </div>
+    </section>
 
-        <div class="personnel-card">
-          <div class="photo-area">
-            <img src="images/munjal.jpeg" alt="Gram Sevak's Photo">
-          </div>
-          <h3>SHRI. BHIMASHANKAR PARAPPA MUNJAL</h3>
-          <h4>Gram Sevak (Village Secretary)</h4>
-          <p>Administrative head and government-appointed official, responsible for record-keeping, execution of decisions, and liaison with government departments.</p>
-          <p class="quote">"My duty is to serve the public with efficiency and integrity."</p>
+    <section class="section">
+        <h2 class="section-title">आमचे नेतृत्व</h2>
+        <p class="section-subtitle">ग्रामपंचायतीचे पदाधिकारी व सदस्य</p>
+
+        <div class="leadership-grid">
+            <div class="leader-card">
+                <img src="images/leaders/sarpanch.jpg" alt="Sarpanch" onerror="this.src='https://via.placeholder.com/400x400?text=Sarpanch'">
+                <div class="leader-info">
+                    <h3>श्री/सौ. [नाव]</h3>
+                    <p class="position">सरपंच</p>
+                    <p>गावाच्या विकासासाठी समर्पित नेतृत्व</p>
+                </div>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/leaders/upasarpanch.jpg" alt="Upa-Sarpanch" onerror="this.src='https://via.placeholder.com/400x400?text=Upa-Sarpanch'">
+                <div class="leader-info">
+                    <h3>श्री/सौ. [नाव]</h3>
+                    <p class="position">उपसरपंच</p>
+                    <p>ग्रामपंचायत विकास कार्यात सहभागी</p>
+                </div>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/leaders/secretary.jpg" alt="Secretary" onerror="this.src='https://via.placeholder.com/400x400?text=Secretary'">
+                <div class="leader-info">
+                    <h3>श्री/सौ. [नाव]</h3>
+                    <p class="position">ग्रामसेवक</p>
+                    <p>प्रशासकीय कार्यात कुशल</p>
+                </div>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/leaders/member1.jpg" alt="Member 1" onerror="this.src='https://via.placeholder.com/400x400?text=Member+1'">
+                <div class="leader-info">
+                    <h3>श्री/सौ. [नाव]</h3>
+                    <p class="position">पंच सदस्य</p>
+                    <p>ग्रामपंचायत सदस्य</p>
+                </div>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/leaders/member2.jpg" alt="Member 2" onerror="this.src='https://via.placeholder.com/400x400?text=Member+2'">
+                <div class="leader-info">
+                    <h3>श्री/सौ. [नाव]</h3>
+                    <p class="position">पंच सदस्य</p>
+                    <p>ग्रामपंचायत सदस्य</p>
+                </div>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/leaders/member3.jpg" alt="Member 3" onerror="this.src='https://via.placeholder.com/400x400?text=Member+3'">
+                <div class="leader-info">
+                    <h3>श्री/सौ. [नाव]</h3>
+                    <p class="position">पंच सदस्य</p>
+                    <p>ग्रामपंचायत सदस्य</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer>
-  <div class="container">
-    <div class="footer-contact">
-      <h3>Contact Us</h3>
-      <p><i class="fas fa-map-marker-alt"></i> Gram Panchayat Office, Village Shiradhon, 123456</p>
-      <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:info@Shiradhonpanchayat.gov.in">info@Shiradhonpanchayat.gov.in</a></p>
+    <section class="section">
+        <h2 class="section-title">आमची उद्दिष्टे</h2>
+        <div class="gallery-grid">
+            <div class="contact-card">
+                <div class="contact-icon">🌱</div>
+                <h3 style="color: var(--primary-green); margin: 1rem 0;">शाश्वत विकास</h3>
+                <p>पर्यावरण संवर्धन करत आधुनिक विकास साधणे</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">👥</div>
+                <h3 style="color: var(--primary-green); margin: 1rem 0;">जनसहभाग</h3>
+                <p>प्रत्येक निर्णयात नागरिकांचा सहभाग सुनिश्चित करणे</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💎</div>
+                <h3 style="color: var(--primary-green); margin: 1rem 0;">पारदर्शकता</h3>
+                <p>सर्व कामकाजात पूर्ण पारदर्शकता राखणे</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">🎯</div>
+                <h3 style="color: var(--primary-green); margin: 1rem 0;">उत्तम सेवा</h3>
+                <p>नागरिकांना जलद व दर्जेदार सेवा पुरविणे</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>शिराढोण ग्रामपंचायत</h3>
+                <p>आधुनिक गाव, सुंदर भविष्य</p>
+            </div>
+            <div class="footer-section">
+                <h3>द्रुत दुवे</h3>
+                <a href="index.html">मुख्यपृष्ठ</a>
+                <a href="about.html">आमच्याबद्दल</a>
+                <a href="gallery.html">गॅलरी</a>
+                <a href="index.html#services">सेवा</a>
+            </div>
+            <div class="footer-section">
+                <h3>संपर्क</h3>
+                <p style="margin-bottom: 0.5rem;">शिराढोण ग्रामपंचायत कार्यालय<br>पोस्ट शिराढोण, तालुका कंधार<br>जिल्हा नांदेड, महाराष्ट्र ४३१७०७</p>
+                <a href="tel:+918055819996">📞 +91 8055819996</a>
+                <a href="mailto:gpshiradhon181375@gmail.com">✉️ gpshiradhon181375@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 शिराढोण ग्रामपंचायत. सर्व हक्क राखीव.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float" onclick="window.open('https://wa.me/918055819996', '_blank')">
+        <span>💬</span>
     </div>
-    <div class="footer-social">
-      <h3>Follow Us</h3>
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Shiradhon Gram Panchayat. All rights reserved.</p>
-  </div>
-</footer>
-<script src="script.js"></script>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
